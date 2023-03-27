@@ -6,10 +6,12 @@ Python Projects:
 
 What is Fernet?
 
-Fernet encryption is a type of symmetric encryption that is used to protect the confidentiality and integrity of data. It is a high-level encryption system that uses a shared secret key between the sender and the recipient to encrypt and decrypt the data. Fernet encryption is a part of the cryptography library in Python, and it is built on top of the Advanced Encryption Standard (AES) algorithm.
+Fernet encryption is a type of symmetric encryption that is used to protect the confidentiality and integrity of data. It is a high-level encryption system that uses a shared secret key between the sender and the recipient to encrypt and decrypt the data. Fernet encryption is a part of the cryptography library in Python, and it is built on top of the Advanced Encryption Standard (AES) algorithm (128 bit encryption).
 
 To implement Fernet encryption in a real-world scenario, you would first need to generate a secret key that is used to encrypt and decrypt the data. This secret key should be kept secure and only shared with authorized parties. Once you have generated the key, you can use it to encrypt any sensitive data that you want to protect.
 
 For example, if you are building a web application that collects sensitive user data such as login credentials or credit card information, you can use Fernet encryption to protect this data. When a user submits their data, your application can encrypt it using the secret key before storing it in a database. Later, when the user needs to access their data, the application can use the same secret key to decrypt the data and present it back to the user in its original form.
 
 Fernet encryption can also be used for secure communication between two parties. For instance, if you are building a messaging application, you can use Fernet encryption to encrypt the messages that are sent between the users. The sender can encrypt the message using the secret key and send it to the recipient. The recipient can then decrypt the message using the same secret key and read it in its original form. Overall, Fernet encryption is a powerful tool that can help to protect sensitive data in a variety of real-world scenarios.
+
+In this scenario, we will utilize Fernet to encrypt files in a directory to demonstrate how a ransomware malware would work. 
