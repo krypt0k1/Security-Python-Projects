@@ -15,3 +15,24 @@ For example, if you are building a web application that collects sensitive user 
 Fernet encryption can also be used for secure communication between two parties. For instance, if you are building a messaging application, you can use Fernet encryption to encrypt the messages that are sent between the users. The sender can encrypt the message using the secret key and send it to the recipient. The recipient can then decrypt the message using the same secret key and read it in its original form. Overall, Fernet encryption is a powerful tool that can help to protect sensitive data in a variety of real-world scenarios.
 
 In this scenario, we will utilize Fernet to encrypt files in a directory to demonstrate how a ransomware malware would work. 
+
+First lets look at at an example of encrpytion with Fernet:
+
+# Import module
+>>> from cryptography.fernet import Fernet
+# Generate key
+>>> key = Fernet.generate_key()
+>>> key
+'Qk_GF82vx2qPBiF91n238Mp5HeAlgYpC90NB9PGEB_0='
+>>> f = Fernet(key)
+# Encrypt
+>>> token = f.encrypt(b"Hello 8gwifi.org")
+>>> token
+'gAAAAABf1ecawfmsxp0S80m5LxV4md9Vf4lO7N-P9jQ08de_oLb5382Aqf7aGEof23E6N0WYPyhJkvhT1dDJJU4tdAFAhqnK-uiOoSu1T5P6XZLPcU90Rn0='
+# Decrypt
+>>> f.decrypt(token)
+'Hello 8gwifi.org'
+
+source: https://8gwifi.org/fernet.jsp
+
+
