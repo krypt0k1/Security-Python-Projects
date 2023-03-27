@@ -1,4 +1,4 @@
-#Cybersecurity Projects
+# Cybersecurity Projects
 
 
 Python Projects:
@@ -12,6 +12,4 @@ To implement Fernet encryption in a real-world scenario, you would first need to
 
 For example, if you are building a web application that collects sensitive user data such as login credentials or credit card information, you can use Fernet encryption to protect this data. When a user submits their data, your application can encrypt it using the secret key before storing it in a database. Later, when the user needs to access their data, the application can use the same secret key to decrypt the data and present it back to the user in its original form.
 
-Fernet encryption can also be used for secure communication between two parties. For instance, if you are building a messaging application, you can use Fernet encryption to encrypt the messages that are sent between the users. The sender can encrypt the message using the secret key and send it to the recipient. The recipient can then decrypt the message using the same secret key and read it in its original form.
-
-Overall, Fernet encryption is a powerful tool that can help to protect sensitive data in a variety of real-world scenarios.
+Fernet encryption can also be used for secure communication between two parties. For instance, if you are building a messaging application, you can use Fernet encryption to encrypt the messages that are sent between the users. The sender can encrypt the message using the secret key and send it to the recipient. The recipient can then decrypt the message using the same secret key and read it in its original form. Overall, Fernet encryption is a powerful tool that can help to protect sensitive data in a variety of real-world scenarios.
