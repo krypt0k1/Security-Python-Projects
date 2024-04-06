@@ -42,9 +42,9 @@ def parse_args():
     return args
 
 
-# Function to generate password parameters.
+# Function to generate password.
 
-def password_parameters(args,length): 
+def gen_pass(args,length): 
     alphabet = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.choice(alphabet) for i in range(length))
 
@@ -53,13 +53,13 @@ def password_parameters(args,length):
 # Main function
 def main():
     
-    # Parse the arguments
+    # Parse arguments
     args = parse_args()
     length = args["length"]
 
     # Conditional to check if the generate flag is set. If true, generate a high entropy password based on the desired length.     
     if args['generate']:  
-        password = password_parameters(args, length)
+        password = gen_pass(args, length)
         print(f"Generated password: {password}")
     else:
         print("No password generated, please use the --generate and --length # flag.")
