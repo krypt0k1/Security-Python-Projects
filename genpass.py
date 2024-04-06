@@ -62,7 +62,7 @@ def main():
         password = gen_pass(args, length)
         print(f"Generated password: {password}")
     else:
-        print("No password generated, please use the --generate and --length # flag.")
+        print("No password generated, See full menu genpass.py --help or execute genpass.py --generate --length # to generate..")
 
 # Call to main
 if __name__ == "__main__":
