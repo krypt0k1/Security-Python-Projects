@@ -1,8 +1,8 @@
-# Cybersecurity Projects #
+# Cybersecurity Projects
 
-
-# Python Projects:
+Python Projects:
 - Fernet Ransomware 
 - High Entropy Password Generator (genpass) 
 
-The genpass script offers a robust solution for generating high-entropy passwords, ideal for securing accounts and sensitive data. Leveraging Python's built-in modules, it provides a customizable password-generation tool that can be tailored through command-line arguments. Users can specify the desired length of the password, and trigger the generation process, ensuring versatility and user control. Enhanced with error handling and logging, the script prioritizes reliability and ease of use. Perfect for both personal and professional security needs, this script is a must-have tool for anyone looking to strengthen their password security.
+The genpass script offers a robust solution for generating high-entropy passwords, ideal for securing accounts and sensitive data. Leveraging Python's built-in modules, it provides a customizable password-generation tool that can be tailored through command-line arguments. Users can specify the desired length of the password, and trigger the generation process, ensuring versatility and user control. Enhanced with error handling and logging, the script prioritizes reliability and ease of use. Perfect for both personal and professional security needs, this script is 
+beneficial for anyone looking to strengthen their password security.
